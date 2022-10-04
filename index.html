@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>1. Difference between “ == “ and “ === “ operators?</p>
+    <p>The equality operator in javascript is used to compare if two values are equal. 
+        The comparison is made by == and === operators in javascript. The main difference
+        between the == and === operator in javascript is that the == operator does the type
+        conversion of the operands before comparison, whereas the === operator compares the
+        values as well as the data types of the operands.
+    </p>
+    <hr>
+    <p>2. What is the spread operator?</p>
+    <p>The JavaScript spread operator ( ... ) allows us to quickly copy all or part of an existing array or object into another array or object.</p>
+    <pre>
+        let a = [ 90, 88, 100]
+        let b = [...a , 99, 102]
+        console.log(b)
+        out put : [90, 88, 100, 99, 102]
+    </pre>
+    <hr>
+    <p>3. What are the differences between var, let and const?</p>
+    <ul>
+        <li>var can be updated and redeclared. It's scope is functional scope and its default value without initialisation is 'undefined'.</li>
+        <li>let can be updated but can't be redeclared. It's scope is block scope and it cannot be accessed without initialisation.</li>
+        <li>const can neither be updated nor redeclared. It's scope is block scope and it cannot be accessed without initialisation.</li>
+    </ul>
+    <hr>
+    <p>4. What is execution context?</p>
+    <p>
+    <p>The execution context is used to describe how a code works inside. The specified code is parsed line by line during the execution context, and the variables and functions are saved in memory. The code is evaluated and then executed in an execution context, which is similar to a container that contains variables. First of all, a 'Global execution context' is created in which the global scope variables are stored and a 'function execution context' is created when there is a function call in the code.</p>
+    <hr>
+    <p>5. What is meant by first class functions?</p>
+    <p>Function can be assigned to to a variable, <br> function can be passed as an argument, <br> function can be returned from other function.  </p>
+    <hr>
+
+    <p>6. What are closures? Give an example of closure?</p>
+    <p> When a function is declared inside another function then the child function can inherit the values from it's lexial parent function, this is known as closures in JS. Closures are created every time a function is created, at function creation time.</p>
+    <pre>
+        function test(){
+            let a = 20;
+            function child(){
+                console.log(a)
+            }
+            child()
+        }
+        test()
+    </pre>
+    <hr>
+    
+    <p>7. Explain call(), apply() and, bind() methods. Give an example of call(), apply(), bind()</p>
+    <p>these are just different way of calling or invoking a function. when you are calling a function using any of these then you dont have to define in the function that the first argument will be an object.</p>
+    <ul>
+        <li>Call is a method in function that helps us to replace the value of 'this' inside a function with whatever value we want. Some additional arguments can alse be given for the variables inside the function.</li>
+        <li>Apply is very similar to the call method. The only difference is that in apply we can pass an array as an argument list.</li>
+        <li>Bind is a method in function that helps us to create another function that we can execute later as per our requirement.</li>
+    </ul>
+    
+
+</body>
+</html>
